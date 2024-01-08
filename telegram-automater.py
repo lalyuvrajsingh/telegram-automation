@@ -85,6 +85,8 @@ async def add_chat_id(update: Update, context: ContextTypes.DEFAULT_TYPE) -> Non
     else:
         await update.message.reply_text('This chat is already in the list of recipients.')
         
+#####################################################################################################################
+        
 async def send_message_to_group(context: ContextTypes.DEFAULT_TYPE, chat_id, text):
     try:
         await context.bot.send_message(chat_id=chat_id, text=text)
